@@ -1,0 +1,3 @@
+怎么使用callback函数
+
+怎么使用线程thread 

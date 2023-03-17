@@ -1,0 +1,1 @@
+[Bose耳机连接方式](https://www.bose.cn/zh_cn/support/articles/HC1283/productCodes/qc_earbuds/article.html)
