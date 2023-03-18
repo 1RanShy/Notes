@@ -33,7 +33,6 @@ Everytime when i  use command make it will give me the errors.
 - [ ] 3.17 下午5点
 
 # ---------当天-----------
-- [ ] ------交个人报告 交SE报告
 - [ ]  ----- 给老师发邮件询问一下 executive abstract是什么?
 - [ ] 查找低碳的论文,写一个demo
 
