@@ -78,6 +78,13 @@ git fetch获取本地仓库是不是与远端同步
 ==注意克隆分支与主分支是不同的操作==
 
 ## 克隆分支
+~~~git
+git clone -b (远端名) https/-------
+# 这是和克隆主分支一样的操作
+
+~~~
+
+
 这个操作是创建本地分支并且与远端分支相关联.
 git checkout -b yulong origin/yulong
 [git clone远程仓库的指定分支\_51CTO博客\_git clone 指定远程分支](https://blog.51cto.com/u_15688254/5391692)
@@ -565,3 +572,6 @@ update to origin/main
 
 # The push operation includes a file which exceeds
 [Fetching Title#f4en](https://blog.csdn.net/qq_34977392/article/details/110817621)
+
+# Removing files from a repository's history
+[About large files on GitHub - GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)

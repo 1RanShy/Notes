@@ -314,3 +314,6 @@ int main()			//主线程
 	return 0;
 }
 ~~~
+
+# 如何使变量在多个.c文件中可见
+![](assets/Pasted%20image%2020230318170048.png)

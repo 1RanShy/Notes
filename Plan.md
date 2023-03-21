@@ -1,8 +1,4 @@
 # 嵌入式
-- [x] --- Cmake  下周问实验室老师
-问: I installed the cmake. Check the version. But it still doesn't work.
-Everytime when i  use command make it will give me the errors.
-- [x] ---重看一边chapter2 整理一下
 - [ ] ---尝试一下编写C++带类的代码
 - [ ] -------Cmake实验
 ---
@@ -24,25 +20,32 @@ Everytime when i  use command make it will give me the errors.
 - [ ] 3.31 最终报告和同伴互评
 ---
 # SE
-- [ ] 看课件
-- [ ] 看实验
-- [ ] ---构造函数
-- [ ] ---拷贝构造函数
+- [ ] 等考试
 ---
 - [ ] DDL
 - [ ] 3.17 下午5点
 
 # ---------当天-----------
-- [ ]  ----- 给老师发邮件询问一下 executive abstract是什么?
-- [ ] 查找低碳的论文,写一个demo
+- [ ] ----- 给老师发邮件询问一下 executive abstract是什么?
+- [ ] --蓝牙芯片测试
+- [ ] 人体传感器测试
+- [ ] 重量传感器
+- [ ] ISDP  Introduction
+- [ ] 简历在51 job上更新好
 
 ## 嵌入式
-- [ ] ------ 什么是实时嵌入式系统? 重新设计嵌入式系统.
-	- [ ] 什么是实时 
-	- [ ] 回调
-	- [ ] 多线程
 - [ ] 使用一下我的设备测试一下萱萱的蓝牙是否能正常工作
 - [ ] 自己开始看BLE蓝牙相关,应该在我的U盘中.
+- [ ] 开始计划制作 自动喂食器的模型
+- [ ] 统一编码格式
+
+## 器件
+- [x] SR04 声波测距仪
+- [x] 舵机
+- [ ] 人体传感器
+- [ ] 摄像头
+- [ ] 蓝牙芯片
+- [ ] Pump
 
 ### 规划
 - [ ] 刘宇龙: 用C语言 来写器件的调用函数 确保器件能够正常工作 可以 一个一个器件的来
@@ -55,19 +58,8 @@ Everytime when i  use command make it will give me the errors.
 
 这样可以不耽误时间,在C++多线程不会编程的情况下推进项目.
 
-## C++
-[Build your first multithreaded application - Introduction to multithreading in modern C++ - YouTube](https://www.youtube.com/watch?v=xPqnoB2hjjA&t=4s)
-[C++ ,ultithread - YouTube](https://www.youtube.com/results?search_query=C%2B%2B+%2Cultithread)
 
-
----
-大肠米粉 : 38.8/4 = 9.7
-油条 1.8
-额外肥肠 3.3
-
-黄师傅: 大份米粉 + 油条 9.7 + 3.3 = 13
-刘老板 : 大份米粉×2 + 油条×2 + 额外肥肠 2×9.7 + 2 × 1.8 + 3.3 = 16.3
-
-
-
-[清空 Git 仓库全部历史记录](https://shixiongfei.com/clear-history-of-git.html)
+# Birthday Gift 04/07
+- [ ] 去做陶艺
+- [ ] 写贺卡
+- [ ] bychance 玫瑰牛乳茶大杯子
