@@ -3,7 +3,9 @@ title: Huamn Sensor
 date: 2023-02-14T10:50:36Z
 lastmod: 2023-02-14T10:52:30Z
 ---
+Youmile 5PACK IR Human Sensor AM312 Mini Detector Module HC-SR312 Pyroelectric Infrared PIR Motion Automatic Detector DC 2.7 to 12V for Arduino 2 A1U2 With Dupont Wire
 
+[数据手册](https://cdn-shop.adafruit.com/product-files/4871/4871_C15784.pdf)
 # Huamn Sensor
 
 规格:
