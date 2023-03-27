@@ -575,3 +575,7 @@ update to origin/main
 
 # Removing files from a repository's history
 [About large files on GitHub - GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github)
+
+
+# Git常用命令查表
+![](assets/Pasted%20image%2020230325104407.png)

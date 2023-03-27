@@ -1,5 +1,50 @@
+~~~text
+To mohanmod
+Hi bro, Your report is already very good, but there is only a small problem. Could you compress your report into four or three pages?
 
-<mark style="background: #FF5582A6;">Increase the cable cross sectional area</mark>
+And If you quote some pictures in the report, please follow this format:
+~~~
+28号晚上汇总
+# 问题
+## 字体行距
+Arial 字体 12 号字体 1.5 倍行距
+ctrl+A 全选后 再设置这些:Arial 字体 12 号字体 1.5 倍行距
+页数是在这个行距和字体下的页数,因为如果报告的基本格式是这样的,然后不能超过30页.
+![](assets/截图_20230327114223.png)
+
+## 图片引用
+格式是这样 :
+![](assets/截图_20230324232841.png)
+
+然后Note下空一行.
+
+![](assets/截图_20230327113912.png)
+
+然后我们不分图片还是表格统一都写figure number
+### 引用的图片
+就按照上面 把figure写上面
+
+不是引用的图片就这样:把figure写下面. 数字还是接着上面的来.
+![](assets/截图_20230327130608.png)
+						Figure 2 : XXXXXXXXXXX
+
+## 分工
+- [ ] 两个工程问题   wmy csy
+- [ ] 其他人改一下自己的报告
+- [ ] Introduction  lyy  就是介绍一下我们这个项目
+- [ ] conclusion  rs
+- [ ] 查重rs 
+- [ ] reference rs 
+- [ ] abstractive rs
+
+## 时间安排
+29号上午给我材料我汇总好下午再开一次会.
+30号总报告. 查重
+
+
+
+# Challenge Part
+## Increase the cable cross sectional area
 
 这个主题的challenges移到下面去, 但是
  such as laying power lines and installing compensation equipment, vegetation damage and soil erosion may be caused to some extent, which may have some impact on the ecological environment in the university.
@@ -14,6 +59,11 @@ How it rise up?
 ​How to deal with it?
 
 ---
+# 图片引用格式
+[Citing tables, figures & images: APA (7th ed.) citation guide | SFU Library](https://www.lib.sfu.ca/help/cite-write/citation-style-guides/apa/tables-figures)
+[Citing Tables and Figures in APA Style | Format & Examples](https://www.scribbr.com/apa-examples/citing-tables-figures/)
+![](assets/截图_20230324232841.png)
+
 
 Engeneering Challenge two
 
@@ -23,7 +73,7 @@ How it rise up?
 
 ![](assets/截图_20230324212513%201.png)
 
-<mark style="background: #FF5582A6;">Improve the efficiency of eletric energy utilization</mark>
+## Improve the efficiency of eletric energy utilization
 <mark style="background: #FFB8EBA6;">这个分工还有一个人没写</mark>
 
 这个之前是之前商量的安装电表统计电量并且可以用app随时查看用电量,用app随时关停电器实现不浪费电能的,等一段时间自动没人使用就关闭这个电器的,
@@ -51,11 +101,11 @@ Content Tables 目录 1 Pages
 <mark style="background: #FFB8EBA6;">Absract / Introduction 摘要 ? 是不是和 Executive Summary一样? 1 Page</mark>
 
 Improve Energy Efficiency // 6 Pages  这个下面选两个方向写 一个方向三页差不多
-	<mark style="background: #FF5582A6;">Improve the efficiency of eletric energy utilization</mark>
+	<mark style="background: #FF5582A6;">Improve the efficiency of eletric energy utilization</mark>  // 3 pages
 		How to do
 		Advantages
 		Chanllenges
-	Increase the cable cross_sectional area   // actually 4 pages
+	Increase the cable cross_sectional area   // actually 4 pages 减一页
 		How to do
 		Advantages
 		Chanllenges
@@ -104,4 +154,20 @@ Green House //3 pages  6 Pages  肯定要删除一点 2 页
 26
 
 ---
----------------------------- Outline Part ------------------------------------
+
+
+
+
+# 最终分工
+29号上午给我我整理一下,查重,看看需不需要再改报告.
+- [ ] 两个工程问题   wmy csy
+	抛开challenge 写3 页.
+	challenge 写 1.5page 或者2pages
+- [ ] 其他人改一下自己的报告
+- [ ] Introduction  lyy  就是介绍一下我们这个项目
+	0.5 page - 1page就行
+
+- [ ] conclusion  rs
+- [ ] 查重rs 
+- [ ] reference rs 
+- [ ] abstractive rs
