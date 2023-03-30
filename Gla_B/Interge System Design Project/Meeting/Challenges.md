@@ -98,8 +98,6 @@ How to write the part Chanllenges :
 
 Content Tables 目录 1 Pages
 
-<mark style="background: #FFB8EBA6;">Absract / Introduction 摘要 ? 是不是和 Executive Summary一样? 1 Page</mark>
-
 Improve Energy Efficiency // 6 Pages  这个下面选两个方向写 一个方向三页差不多
 	<mark style="background: #FF5582A6;">Improve the efficiency of eletric energy utilization</mark>  // 3 pages
 		How to do
@@ -164,10 +162,15 @@ Green House //3 pages  6 Pages  肯定要删除一点 2 页
 	抛开challenge 写3 页.
 	challenge 写 1.5page 或者2pages
 - [ ] 其他人改一下自己的报告
-- [ ] Introduction  lyy  就是介绍一下我们这个项目
+	- [x] 梁宇阳
+	- [ ] wmy
+	- [ ] csy
+	- [ ] wrf
+	- [x] rs
+- [x] Introduction  lyy  就是介绍一下我们这个项目
 	0.5 page - 1page就行
 
-- [ ] conclusion  rs
+- [x] conclusion  rs
 - [ ] 查重rs 
 - [ ] reference rs 
 - [ ] abstractive rs

@@ -49,3 +49,6 @@ This audio sounds very cluttered, I can't tell what the content is
 
 # 1.5
 ![](assets/截图_20230327102842.png)
+
+1.4 是加上噪声但是没有使用RSC解调
+1.5 是加上噪声使用RSC编码和调制
