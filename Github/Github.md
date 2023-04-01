@@ -566,6 +566,8 @@ update to origin/main
 如果什么都没有说明不需要,如果命令行出现了内容就说明需要更新.
 
 # Gitignore
+如何忽略已经被跟踪的文件
+[Git忽略规则及忽略已被跟踪的文件](https://blog.csdn.net/cccmercy/article/details/81091910)
 
 # 有关token被自动删除
 这是因为你在github上传的文件中包含了这个密匙因此就会导致你这个密匙被删除
