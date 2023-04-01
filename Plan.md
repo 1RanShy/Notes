@@ -2,6 +2,7 @@
 Aythor: RanShuai
 Created Time:  2023-03-21 23:15:13
 ```
+
 # 嵌入式
 - [ ] ---尝试一下编写C++带类的代码
 - [ ] -------Cmake实验
@@ -24,6 +25,7 @@ Created Time:  2023-03-21 23:15:13
 - [ ] 4/28号考试 9:30am
 
 # ---------当天-----------
+- [ ] 改改figure的格式,上面空一格应该是能够正好三十页的.
 
 
 ## 讨论一下箱子的模型可以开始做了
@@ -55,3 +57,4 @@ Created Time:  2023-03-21 23:15:13
 - [ ] 去做陶艺
 - [ ] 写贺卡
 - [ ] bychance 玫瑰牛乳茶大杯子
+- [ ] [港式茶餐厅](https://www.xiaohongshu.com/explore/64260a4e0000000013010506?app_platform=ios&app_version=7.80&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=5d57586b000000000100191a&apptime=1680215617)
