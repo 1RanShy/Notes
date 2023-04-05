@@ -25,36 +25,29 @@ Created Time:  2023-03-21 23:15:13
 - [ ] 4/28号考试 9:30am
 
 # ---------当天-----------
-- [ ] 改改figure的格式,上面空一格应该是能够正好三十页的.
-
-
-## 讨论一下箱子的模型可以开始做了
-
-
-## 器件
-- [x] SR04 声波测距仪
-- [x] 舵机
-- [x] 人体传感器
-- [x] 蓝牙芯片
-- [ ] Pump
-- [ ] 摄像头
-- [ ] 称重器
-- [ ] 喂食器的样机
-
-### 规划
-- [ ] 刘宇龙: 用C语言 来写器件的调用函数 确保器件能够正常工作 可以 一个一个器件的来
-
-这是因为首先要确保器件正常工作, 先用C语言写比较好查错. 其次是因为C可以直接移植到C++
-
-- [ ] 冉帅 : 我来用cmake 调试写好的 C语言代码. 并且写好这个器件的多线程demo,方便转为C++多线程.  在刘写代码期间可以思考如何转为C++ 多线程
-
-- [ ] 刘宇龙 和 冉帅  一起将 C 改为 C++的多线程文件
-
-这样可以不耽误时间,在C++多线程不会编程的情况下推进项目.
+- [ ] 约陶艺
+- [ ] 打印照片
+- [ ] 
 
 
 # Birthday Gift 04/07
-- [ ] 去做陶艺
+- [ ] 去做陶艺 4/7日上午 11:15 G38AZ
+	[陶艺推荐,需要提前预约](https://www.xiaohongshu.com/explore/63e520780000000002000603?app_platform=ios&app_version=7.81&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=5efca496000000000101c2be&apptime=1680339058)
 - [ ] 写贺卡
 - [ ] bychance 玫瑰牛乳茶大杯子
 - [ ] [港式茶餐厅](https://www.xiaohongshu.com/explore/64260a4e0000000013010506?app_platform=ios&app_version=7.80&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=5d57586b000000000100191a&apptime=1680215617)
+
+
+# 电影
+- [ ] 始皇帝刺杀
+
+
+
+
+
+# 开销
+- [ ] 3093
+- [ ] 889 * 3
+
+
+
