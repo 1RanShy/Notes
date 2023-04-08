@@ -33,9 +33,6 @@ Created Time:  2023-03-21 23:15:13
 
 
 # Birthday Gift 04/07
-- [ ] 去做陶艺 4/7日上午 11:15 G38AZ
-	[陶艺推荐,需要提前预约](https://www.xiaohongshu.com/explore/63e520780000000002000603?app_platform=ios&app_version=7.81&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=5efca496000000000101c2be&apptime=1680339058)
-- [ ] 写贺卡
 - [ ] bychance 玫瑰牛乳茶大杯子
 - [ ] [港式茶餐厅](https://www.xiaohongshu.com/explore/64260a4e0000000013010506?app_platform=ios&app_version=7.80&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=5d57586b000000000100191a&apptime=1680215617)
 
@@ -52,6 +49,5 @@ Created Time:  2023-03-21 23:15:13
 - [ ] 889 * 3
 
 
-1
 - [ ] 倾倒猫粮
 - [ ] 倒垃圾
