@@ -52,3 +52,10 @@ if(x == 1)
 - [ ] 收
 
 - [ ] 发: 使用人体传感器,判断猫咪是否在吃饭,定时调用并发
+
+# Serial出现问题
+- [ ] 可能是没有在设置中打开串口
+- [ ] [Using the serial port on Raspberry Pi](https://www.abelectronics.co.uk/kb/article/1035/serial-port-setup-in-raspberry-pi-os)
+- [ ] 现在是能够发送信息了,但是不能够接受信息
+	- [ ] 可能是没加延迟
+	- [ ] 可能是类的问题
