@@ -31,23 +31,17 @@ Created Time:  2023-03-21 23:15:13
 - [ ] 写猫粮倾倒
 
 
-
-# Birthday Gift 04/07
-- [ ] bychance 玫瑰牛乳茶大杯子
-- [ ] [港式茶餐厅](https://www.xiaohongshu.com/explore/64260a4e0000000013010506?app_platform=ios&app_version=7.80&share_from_user_hidden=true&type=normal&xhsshare=WeixinSession&appuid=5d57586b000000000100191a&apptime=1680215617)
-
-
-# 电影
-- [ ] 始皇帝刺杀
-
-
-
-
-
 # 开销
-- [ ] 3093
-- [ ] 889 * 3
+~~~text
+如果我现在手里有6W
+(3093.75 + 830.22 + 830.22 + 830.22)*8.5 = 48,584.367 rmb
+剩余 11,415.633 rmb
 
+11,415.633 / 8.5 = 1343 p
 
-- [ ] 倾倒猫粮
-- [ ] 倒垃圾
+如果真的能收到1.6w
+16000/8.5 = 1882 p
+
+3225 + 200 = 3445
+
+~~~
