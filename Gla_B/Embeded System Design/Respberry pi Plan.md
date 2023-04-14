@@ -28,14 +28,12 @@
 
 
 # Report should contains
-- [ ] 确定引脚的电路图
-- [ ] 一张使用altium design画的schematic 
-- [ ] 最好还能有一份 ciurcuit网站的图
-- [ ] 详细解释
-	1. github分支
-	2. ins的详细介绍
-	3. 如何分工
-	4. 以及上面的会导致零分几点都要在报告中提到.
+- [ ] 改代码注释
+- [ ] 电路图重新画重新确认提交到github上
+- [ ] report怎么写
+- [ ] 加readme 以及说明
+- [ ] 还有就是再测试一下程序吧
+- [ ] 还有issue
 
 
 # Plan
