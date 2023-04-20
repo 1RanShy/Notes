@@ -3,10 +3,11 @@ title: Week1
 date: 2023-01-31T21:38:12Z
 lastmod: 2023-02-01T09:22:03Z
 ---
-
+[Introduction-generated.pdf](assets/1-Introduction-generated-20230110193517-o115ih5.pdf)
+[Object_Orientated_Programming__Recap_-generated.pdf](assets/2-Object_Orientated_Programming__Recap_-generated-20230110193517-sn6m7lj.pdf)
+[Semester1-Recap.pdf](assets/Semester1-Recap-20230128194637-3w3jc6u.pdf)
 # Week1
-
-# [Introduction-generated.pdf](assets/1-Introduction-generated-20230110193517-o115ih5.pdf)
+# Introduction-generated
 
 一些最基本课程要求.
 
@@ -14,7 +15,7 @@ lastmod: 2023-02-01T09:22:03Z
 2. 有问题如何提问
 3. 什么时候会有assessment
 
-# [Object_Orientated_Programming__Recap_-generated.pdf](assets/2-Object_Orientated_Programming__Recap_-generated-20230110193517-sn6m7lj.pdf)
+# Object_Orientated_Programming__Recap_-generated
 
 ## Super
 
@@ -39,7 +40,7 @@ x = x;y = y;
 B = A 这是对的,因为子类包含父类的所有变量和方法.
 ```
 
-# [Semester1-Recap.pdf](assets/Semester1-Recap-20230128194637-3w3jc6u.pdf)
+# Semester1-Recap
 
 * Topics Covered in Semester 1
 * Possible Exam Question Types (for Semester 1 topics)
