@@ -19,3 +19,11 @@ The amount of effort required to complete a user story is measured in **story po
 A common definition of an SP is one ideal day (1 SP = 1 ideal day)
 
 **One ideal day** measures what can be achieved if the whole day was spent working on the project.
+
+用户故事是用户为了完成其工作所需的功能或需求的简短描述。它是敏捷软件开发中常用的技术，可以用来记录和通信客户需求。史诗是一组相关用户故事的集合，通常与项目或产品的目标相关。尖峰是一种评估和研究某个具体技术或方法的短期工作，以评估其在项目中的适用性。
+
+约束是一些限制或要求，例如时间、预算、技术或资源等，会对项目或产品的实施产生影响。
+
+与用户故事相关的文档包括：用户故事卡、讨论记录、验收标准等。与史诗相关的文档包括史诗卡、史诗地图等。尖峰通常不需要与特定文档相关联。与约束相关的文档可能包括范围、时间表和资源分配等。
+
+程序员可以使用验收标准来判断用户故事何时完成。验收标准通常在用户故事卡上定义，用于确定何时满足用户需求。当程序员按照验收标准实现并测试用户故事时，用户故事就被认为已完成。
