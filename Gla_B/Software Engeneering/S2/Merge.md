@@ -298,10 +298,173 @@ Final can be applied elsewhere:
 
 
 
-
-
 ## Confusion
 这个什么都没画的线是什么:
 ![这个什么都没画的线是什么](assets/截图_20230425103806.png)
+
+
+
 # Sequence Diagram
 ![](assets/截图_20230425104126.png)
+
+
+
+# Testing
+
+这个test我并没有怎么看
+## Types of Testing
+• Each component/class does what it should: Unit Tests 
+• Components work together correctly Integration Tests 
+• The acceptance criteria (semester 1) are met Acceptance Tests
+
+## Test Cases
+• Givens: What state is the system in before testing 
+• Operations: What do I do to the system 
+• Assertions: What state do I expect the system is now in
+
+
+# Safe Classes Packages Error Handling
+## Exceptions
+Exceptions Language constructs that allow control flow to be changed on an error
+
+![](assets/Pasted%20image%2020230425113538.png)
+
+
+**catch**
+
+这段代码使用了异常处理机制来处理文件读取错误的情况。代码中的 try-catch 块包含了可能会抛出 FileNotFoundException 异常的代码。如果在 try 块中调用 readDataFromFile("badFile.txt") 函数时出现了 FileNotFoundException 异常，程序将跳转到 catch 块中执行。
+
+
+## Throw keyword
+```java
+public void readFile(String fileName) throws FileNotFoundException {
+    File file = new File(fileName);
+    Scanner scanner = new Scanner(file);
+    // ...
+}
+```
+
+在这个示例中，readFile 方法可能会抛出 FileNotFoundException 异常，因为它试图打开一个文件并读取它的内容。因此，方法使用 "throws" 关键字来声明这个异常。如果调用者想要调用这个方法，它必须使用 try-catch 块来处理这个异常，或者也可以使用 "throws" 关键字将异常传递给它的调用者。
+
+总之，"throws" 关键字用于声明一个方法可能会抛出哪些异常，以便调用者可以在调用该方法时处理这些异常。
+
+## Handing Errors
+
+Handling Errors: 
+• Return something sensible 
+• Returning error values (possibly Optional) 
+• Exceptions
+
+## Design Principles for Safe Objects
+• Data Hiding • Don’t leak data 
+• Atomic Operations • Don’t see internal “false” states 
+• Explicit Constructors • Objects are always fully initialised 
+• Exceptions • Potential for invalid states are clearly marked
+
+原子操作是指在执行期间不可中断的操作，它们要么全部执行成功，要么全部失败。在多线程编程中，原子操作是非常重要的，因为它们可以确保线程安全，避免竞态条件和死锁等问题。
+
+举个例子，假设我们有一个计数器变量 count，多个线程需要对它进行增加操作。如果我们使用普通的加法操作，可能会出现竞态条件，导致计数器的值不正确。但是，如果我们使用原子操作，例如 AtomicInteger 类的 incrementAndGet() 方法，就可以确保每个线程都能正确地增加计数器的值，而不会出现竞态条件。
+
+另一个例子是使用原子操作来更新布尔变量的值。如果我们使用普通的赋值操作，可能会出现内部“false”状态，即一个线程在检查变量的值时，可能会看到一个已经被另一个线程修改但尚未更新的值。但是，如果我们使用原子操作，例如 AtomicBoolean 类的 compareAndSet() 方法，就可以确保每个线程都能正确地更新布尔变量的值，并且不会出现内部“false”状态。
+
+总之，原子操作是一种非常有用的编程工具，可以确保线程安全和避免竞态条件等问题。在多线程编程中，我们应该尽可能地使用原子操作来更新共享变量的值，以确保程序的正确性和可靠性。
+
+
+  ![](assets/Pasted%20image%2020230425115158.png)
+
+在软件开发中，为了维护不变量，我们可以使用一些其他的技术。以下是一些常见的技术：
+
+• 抽象类禁止构造：抽象类是一种不能被实例化的类，它只能被用作其他类的基类。通过将类声明为抽象类，我们可以禁止直接构造该类的实例，从而确保该类的不变量不会被破坏。例如，假设我们有一个抽象类 Animal，它有一个抽象方法 makeSound()，我们可以定义一个具体的子类 Dog，它实现了 makeSound() 方法。由于 Animal 是抽象类，我们不能直接构造它的实例，但是我们可以构造 Dog 的实例，并调用它的 makeSound() 方法。
+
+• 多态禁止知道确切的子类型：多态是一种面向对象编程的概念，它允许我们使用基类的引用来引用派生类的对象。通过使用多态，我们可以禁止知道确切的子类型，从而确保不变量不会被破坏。例如，假设我们有一个基类 Animal，它有一个方法 eat()，我们可以定义一个具体的子类 Dog，它重写了 eat() 方法。由于我们可以使用 Animal 类型的引用来引用 Dog 对象，我们不能知道确切的子类型，但是我们可以调用 eat() 方法，它会调用 Dog 类的 eat() 方法。
+
+• final 禁止重新分配变量/覆盖函数：final 是一种 Java 关键字，它可以用于变量和方法。通过将变量声明为 final，我们可以禁止重新分配变量的值，从而确保不变量不会被破坏。例如，假设我们有一个 final 变量 PI，它的值为 3.14159，我们不能重新分配它的值。同样，通过将方法声明为 final，我们可以禁止子类覆盖该方法，从而确保不变量不会被破坏。
+
+总之，为了维护不变量，我们可以使用一些其他的技术，例如抽象类、多态和 final 关键字。这些技术可以帮助我们确保不变量不会被破坏，并提高程序的可靠性和正确性
+
+## Packages
+
+P285开始举例子
+
+
+---
+
+## ---
+
+
+
+# Design Patterns
+Creational Patterns是一类设计模式，用于解决对象的创建问题。这些模式的主要目标是将对象的创建与使用相分离，从而提高代码的灵活性和可维护性。以下是一些常见的Creational Patterns及其解释和示例：
+
+1.  Singleton Pattern: 保证一个类仅有一个实例，并提供全局访问点。示例：数据库连接池。
+    
+2.  Factory Method Pattern: 定义一个用于创建对象的接口，让子类决定实例化哪一个类。示例：不同操作系统下的对话框。
+    
+3.  Abstract Factory Pattern: 提供一个接口，用于创建相关或依赖对象的家族，而不需要指定具体类。示例：GUI工具包的组件。
+    
+4.  Builder Pattern: 将一个复杂对象的构建过程分离出来，使得相同的构建过程可以创建不同的表示。示例：HTML页面构建器。
+    
+5.  Prototype Pattern: 用原型实例指定创建对象的种类，并通过复制这个原型来创建新对象。示例：游戏中的道具或角色。
+    
+
+这些Creational Patterns可以帮助开发人员更加灵活和可维护地创建对象，并且有利于降低代码的耦合度，提高代码的可读性和可重用性。
+
+## Singleton
+
+实现单例模式。
+
+单例模式是一种创建型设计模式，它确保一个类只有一个实例，并提供对该实例的全局访问点。实现单例模式的方法可以有多种，但是它们都具有一些共同的特征，例如限制类的实例化、提供对单个实例的全局访问以及确保线程安全。实现单例模式的方法包括饿汉式、懒汉式、双重检查锁定等。选择哪种方法取决于应用程序的具体需求和环境。
+
+## Factory Method Pattern
+Factory Method Pattern（工厂方法模式）是一种创建型设计模式，它定义了一个用于创建对象的接口，但是让子类决定实例化哪个类。在工厂方法模式中，一个类的实例化是由其子类来完成的。
+
+工厂方法模式通常包含一个抽象的工厂类和多个具体的工厂类。抽象工厂类中定义了创建对象的方法，而具体的工厂类则实现了这些方法，用于创建具体的对象。
+
+以下是一个简单的工厂方法模式的示例代码：
+
+~~~java
+// 定义一个抽象的产品类
+abstract class Product {
+    public abstract void operation();
+}
+
+// 具体的产品类
+class ConcreteProduct1 extends Product {
+    public void operation() {
+        System.out.println("Concrete Product 1");
+    }
+}
+
+class ConcreteProduct2 extends Product {
+    public void operation() {
+        System.out.println("Concrete Product 2");
+    }
+}
+
+// 抽象的工厂类
+abstract class Factory {
+    public abstract Product createProduct();
+}
+
+// 具体的工厂类
+class ConcreteFactory1 extends Factory {
+    public Product createProduct() {
+        return new ConcreteProduct1();
+    }
+}
+
+class ConcreteFactory2 extends Factory {
+    public Product createProduct() {
+        return new ConcreteProduct2();
+    }
+}
+
+// 客户端代码
+public class Client {
+    public static void main(String[] args) {
+        Factory factory = new ConcreteFactory1();
+        Product product = factory.createProduct();
+        product.operation(); // output: Concrete Product 1
+    }
+}
+~~~
