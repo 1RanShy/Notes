@@ -258,3 +258,50 @@ Final can be applied elsewhere:
 ---
 
 # Unified Model Language
+## 修饰符怎么画
+![修饰符](assets/截图_20230425101458.png)
+
+## Abstract Class
+![](assets/截图_20230425101622.png)
+抽象方法 斜体
+
+## Association
+![](assets/截图_20230425101915.png)
+关联表示一个类与另一个类之间的关系，这种关系可以是单向的或双向的。在一个类中，**可以定义一个实例变量来引用另一个类的实例，这就是关联.**
+
+比如这里的User的示例有一个 Account 的示例
+
+## Inheritance
+![](assets/截图_20230425102123.png)
+
+## Aggregation
+弱关联
+
+![](assets/截图_20230425102209.png)
+
+## Compositon
+强关联
+
+![](assets/截图_20230425102304.png)
+
+## Class implement interface
+
+![](assets/截图_20230425103601.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Confusion
+这个什么都没画的线是什么:
+![这个什么都没画的线是什么](assets/截图_20230425103806.png)
+# Sequence Diagram
+![](assets/截图_20230425104126.png)
