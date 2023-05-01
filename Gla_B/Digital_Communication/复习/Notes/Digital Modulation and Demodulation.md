@@ -120,6 +120,7 @@ $$
 
 
 # Tutorial
+## Class
 ![](assets/Pasted%20image%2020230430184329.png)
 对于下面的星座图所示的每种数字调制方案：（a）描述调制方案，（b）确定每个符号的比特数，（c）说明比特率与符号（波特）率的比率，（d）确定需要的波特率以实现24 Mbit/s的比特率。
 1. 4-FSK
@@ -220,11 +221,38 @@ Q1. 表格Q1展示了当前部署的移动（蜂窝）网络技术范围。
 ## 2019
 
 ![](assets/Pasted%20image%2020230501114539.png)
+(a)
 
+(b)
+kbits per symbol  $n = 2^k    -> n QAM$ 
+![](assets/Pasted%20image%2020230501141617.png)
+(c)
+APSK, or Amplitude and Phase Shift Keying, is a type of modulation that combines both amplitude and phase modulation. It uses a varying number of rings in its constellation diagram, where each ring represents a specific amplitude level and phase shift. By using different numbers of rings, APSK can achieve different trade-offs between power efficiency and spectral efficiency.
 
+QAM, or Quadrature Amplitude Modulation, is a type of modulation that uses a two-dimensional constellation diagram to encode multiple bits per symbol. It modulates the amplitude and phase of a carrier signal to represent a constellation of points in the diagram. The number of points in the constellation is determined by the number of bits encoded per symbol.
 
+In terms of performance, APSK can provide higher power efficiency and improved bit error rate performance compared to QAM, especially in channels with high levels of interference. However, QAM is typically more spectrally efficient than APSK, allowing for higher data rates in a given bandwidth.
+
+The choice between APSK and QAM depends on the specific requirements of the communication system, including the channel characteristics, data rate requirements, and available bandwidth.
+
+APSK和QAM是数字通信中常见的调制技术。两者都利用不同的信号点进行调制，以传输数字信息。在选择使用APSK还是QAM时，需要考虑以下因素：
+
+1.  频带宽度：APSK相比QAM具有更大的频带宽度效率，因为它可以使用不同幅度和相位来表示更多的符号，从而提高信道传输效率。
+    
+2.  可靠性：QAM的可靠性比APSK更高，因为它可以在更小的信噪比下实现相同的误码率。APSK在更高的信噪比下可能会产生更高的误码率，这可能会导致传输错误。
+    
+3.  多径衰落：在多径衰落环境下，APSK比QAM更具鲁棒性。这是因为APSK可以使用相位来调制信号，从而使其对相位扭曲更具鲁棒性，这在无线通信中是非常重要的。
+    
+
+因此，在选择使用APSK还是QAM时，需要权衡频带宽度效率、可靠性和鲁棒性等因素。在频带宽度较大、多径衰落环境中，使用APSK更为可取；而在信道质量较差、对传输可靠性要求较高的情况下，选择QAM更为合适。
 
 ## 2018
 Q1 Q2 还没写
+
+## Conclusion
+- [ ] Class的 1 2 不太确定 需要和黄师傅商量
+- [ ] 2021 Q2 的 1不太确定,其他的知道怎么画,但是还没开始画
+
+- [ ] 重点需要注意 2021 Q2的实际画一下,不然考试的时候忘记了
 
 
