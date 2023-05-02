@@ -1,6 +1,8 @@
 打印一下[Noise and Distortion slidesFile](https://moodle.gla.ac.uk/mod/resource/view.php?id=3312904) 
 
 ---
+
+
 DSC-SC = Double Sideband Suppressed Carrier.
 $$
 \phi(t)cosw_ct = f(t)cos^2w_ct = \frac{1}{2}f(t)[1+cos2w_ct]
@@ -9,7 +11,21 @@ $$
 
 ![](assets/Pasted%20image%2020230501145345.png)
 
+左边是BPSK,右边是QPSK
 ![](assets/Pasted%20image%2020230501145547.png)
+
+# Costa Loop
+$S(t)*cos(2 \pi f_0)$
+$S(t)$ -> symbols
+$cos(2 \pi f_0)$ -> carrier
+
+Costas环是一种用于同步数字调制信号的电路。它通过对输入信号进行相位解调和相位比较，产生一个误差信号，并将该信号通过反馈回路调节本地振荡器的频率和相位，以实现对输入信号的同步。
+
+Costas环可以应用于多种数字调制方案，包括二进制相移键控（BPSK）、四进制相移键控（QPSK）和八进制相移键控（8PSK）等。Costas环通常采用两个正交振荡器的输出作为相位解调器的输入，通过低通滤波器和相位比较器来消除相位偏差，并通过反馈回路来调整本地振荡器的频率和相位，以实现同步。
+
+使用Costas环可以有效地恢复数字调制信号中的载波信号，这对于正确解码数字信号非常重要。
+
+
 
 
 # Tutorial
@@ -27,10 +43,14 @@ $$
 在这个信道中，考虑使用带滚降的升余弦脉冲进行脉冲调制。请为滚降系数β选择一个值，以在限制占用带宽和抑制时域脉冲之间实现适当的折衷。 一个常见的折衷选择是β = 0.5，这会在带宽利用率和抑制脉冲之间达到适当的平衡。在频域中，信号的带宽将是(1+β)倍的符号速率。在本例中，滚降系数β = 0.5是一个合适的选择。关于脉冲谱的草图，您可以在网上查找“升余弦脉冲谱”找到相应的示例。
 
 (c)
-
+因此，允许抑制符号间干扰的最小符号周期是多少？ 首先，我们需要计算符号速率Rs。由于滚降系数β = 0.5，信号带宽为(1+β) * Rs = 1.5 * Rs，因此 Rs = OBW / (1+β) = 5 MHz / 1.5 ≈ 3.33 Msymbols/s。符号周期Ts为1/Rs，即： Ts = 1 / 3.33 Msymbols/s ≈ 0.3 μs 所以最小符号周期约为0.3 μs。
 
 (d)
+因此，确定一种调制键控形式，以满足所需的通信比特率。 要实现9 Mbit/s的通信速率，我们可以选择QPSK（四相相移键控），每个符号携带2比特信息。因此，比特速率Rb = 2 * Rs = 2 * 3.33 Msymbols/s = 6.66 Mbit/s，满足所需的通信速率。
+
+(e)
 ![](assets/Pasted%20image%2020230501212320.png)
+(e)
 
 
 ## 2021_Q4
@@ -54,7 +74,7 @@ Matched filter is a type of linear filter, whose purpose is to maximize the sign
 因此，这个通信链路的数据速率约为 x Mbps。
 
 
-## 2020_Q6
+## 2020_Q6?
 ![](assets/Pasted%20image%2020230501222406.png)
 
 
@@ -65,11 +85,25 @@ Matched filter is a type of linear filter, whose purpose is to maximize the sign
 ### Q2
 ![](assets/Pasted%20image%2020230501222252.png)
 
+(a)
+10100111
+cos
+0 下面
+180 上面的尖
+sin相反
+看与开始相反的
 
 
+(b)
+![BPSK的costa环路](assets/Pasted%20image%2020230502134633.png)
 
+这是老师的图,但是这两张图都没错,都对.
+![](assets/Pasted%20image%2020230502135819.png)
+To use both sine and cosine from the VCO and create the voltage by combining them.
 
+![](assets/Pasted%20image%2020230502135122.png)
 
+![](assets/Pasted%20image%2020230502135158.png)
 ### Q5
 ![](assets/Pasted%20image%2020230501222321.png)
 
