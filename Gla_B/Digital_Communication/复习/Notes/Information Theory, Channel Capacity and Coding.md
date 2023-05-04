@@ -1,6 +1,6 @@
 # 信息量 
 $$
-I_A = log\frac{1}{P_A} \quad = -logP_A
+I_A = log_2\frac{1}{P_A} \quad = -log_2P_A
 $$
 对于一个概率为 $P_A$ 的事件 $A$，其信息量可以用公式 $I_A = log\frac{1}{P_A}$ 或 $I_A = -logP_A$ 来表示。这里的信息量表示的是事件 $A$ 发生所提供的信息量的大小。当 $P_A$ 越小（即事件发生的可能性越小），$I_A$ 的值就越大，表示该事件的发生提供的信息量越多。
 For a binary (digital) system we use base 2, i.e. log2, giving information in bits
@@ -29,8 +29,14 @@ H表示所有事件所传递的平均信息量。
 ![](assets/Pasted%20image%2020230503163338.png)
 
 *记住,先加上最小的!*
-![](assets/Pasted%20image%2020230503164442.png)
 
+赫夫曼编码的具体方法：先按出现的概率大小排队，把两
+个最小的概率相加，作为新的概率和剩余的概率重新排
+队，再把最小的两个概率相加，再重新排队，直到最后变
+成1
+### 例子:
+3 5 7 8 11 14 23 29
+![](assets/Pasted%20image%2020230504174134.png)
 ## Lempel-Ziv-Welch (LZW) coding
 [LZW压缩编码](https://search.bilibili.com/all?vt=31338967&keyword=LZW%E5%8E%8B%E7%BC%A9%E7%AE%97%E6%B3%95&from_source=webtop_search&spm_id_from=333.1007&search_source=5)
 这个可能会考需要掌握
@@ -94,3 +100,23 @@ $8.323\%*2$
 ![](assets/2023-05-04_162217.png)
 构建哈夫曼树的顺序而有所不同。但是，不同的哈夫曼编码应具有相同的平均码长，这是由于其构建原理决定的。
 通过使用这个哈夫曼编码对由两个六面骰子总和组成的符号集进行编码，我们可以获得接近熵的平均编码长度，从而实现高效的数据压缩。请注意，实际应用中，哈夫曼编码通常应用于更大的数据集，以便充分利用概率分布特征以实现更高的压缩效果。
+
+![](assets/Pasted%20image%2020230504175701.png)
+
+
+
+PC不在码表里,先加入码表,再编p的码到code,p指向C
+pc在码表里,不加码表,不写code,但是p指向pc
+# Lec2
+An SD terrestial digital TV requires a bit rate of 24 Mbit s−1. If the power to noise ratio is 30 dB, what bandwidth is required?
+$$
+\begin{equation} \begin{aligned}
+C = Blog_2(1+\frac{S}{N})\\
+\frac{S}{N}就是SNR, 单位就是dB
+\end{aligned} \end{equation}
+$$
+![](assets/Pasted%20image%2020230504211947.png)
+
+# Lec3
+奇校验 : 1的个数为奇数为0
+偶校验 : 1的个数为偶数为0

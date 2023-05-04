@@ -46,10 +46,10 @@ Costas环可以应用于多种数字调制方案，包括二进制相移键控�
 因此，允许抑制符号间干扰的最小符号周期是多少？ 首先，我们需要计算符号速率Rs。由于滚降系数β = 0.5，信号带宽为(1+β) * Rs = 1.5 * Rs，因此 Rs = OBW / (1+β) = 5 MHz / 1.5 ≈ 3.33 Msymbols/s。符号周期Ts为1/Rs，即： Ts = 1 / 3.33 Msymbols/s ≈ 0.3 μs 所以最小符号周期约为0.3 μs。
 
 (d)
-因此，确定一种调制键控形式，以满足所需的通信比特率。 要实现9 Mbit/s的通信速率，我们可以选择QPSK（四相相移键控），每个符号携带2比特信息。因此，比特速率Rb = 2 * Rs = 2 * 3.33 Msymbols/s = 6.66 Mbit/s，满足所需的通信速率。
+因此，确定一种调制键控形式，以满足所需的通信比特率。 要实现9 Mbit/s的通信速率，我们可以选择QPSK（四相相移键控），每个符号携带2比特信息。因此，比特速率Rb = 3 * Rs = 3 * 3.33 Msymbols/s = 9.9 Mbit/s，满足所需的通信速率。所以选择16QAM, 一个symbol表示4个bit就是12M,这样才对.
 
 (e)
-![](assets/Pasted%20image%2020230501212320.png)
+16QAM
 (e)
 
 
@@ -71,8 +71,7 @@ Matched filter is a type of linear filter, whose purpose is to maximize the sign
 
 (e) 对于QPSK调制格式，每个符号表示2比特的数据。因此，数据速率（比特率）可以通过以下公式计算： 数据速率 = (1 / Ts) * 每个符号的比特数。
 
-因此，这个通信链路的数据速率约为 x Mbps。
-
+因此，这个通信链路的数据速率约为 x Mbps。 
 
 ## 2020_Q6?
 ![](assets/Pasted%20image%2020230501222406.png)
@@ -106,4 +105,3 @@ To use both sine and cosine from the VCO and create the voltage by combining the
 ![](assets/Pasted%20image%2020230502135158.png)
 ### Q5
 ![](assets/Pasted%20image%2020230501222321.png)
-

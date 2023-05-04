@@ -189,7 +189,7 @@ d就是根据给出的代码画出Signal
 ![](assets/Pasted%20image%2020230502184201.png)
 
 (a)
-(b) 16QAM
+(b) 
 (c)
 (d)
 (e)
@@ -310,3 +310,12 @@ Q1 Q2 还没写
 
 # ASK PSK FSK QAM 优缺点
 ![](assets/Pasted%20image%2020230503095412.png)
+
+# 8 16 QAM PSK
+![](assets/Pasted%20image%2020230504221306.png)
+
+![](assets/Pasted%20image%2020230504221328.png)
+
+QAM
+APSK星座图一定是几个同心圆
+a也是一种特殊的APSK
