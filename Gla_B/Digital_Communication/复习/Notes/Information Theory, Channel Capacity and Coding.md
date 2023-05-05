@@ -120,3 +120,80 @@ $$
 # Lec3
 奇校验 : 1的个数为奇数为0
 偶校验 : 1的个数为偶数为0
+
+
+
+在一个包含n个比特的数据块中，有k个比特出现错误的概率由概率质量函数给出:
+$$
+\begin{equation} \begin{aligned}
+Pr(X = k) = (^n_k)p^k(1-p)^{n-k}\\
+p is bit error ration(BER), binomial coefficient (^n_k) = \frac{n!}{(n-k)!}
+\end{aligned} \end{equation}
+$$
+
+
+# Hamming code
+n - k  = r
+n 码的总长度 k 有效字符的长度 r 纠错码的长度
+block length $2^r -1$ 这个是汉明码的总长度
+message length $k=2^r-r-1$ 这个是汉明码有效位的长度
+code-rate efficiency $\frac{k}{n} = 1-\frac{r}{2^r-1}$
+(7,4) - > n = 7 r = 3 k = 4,所以(7,3)码是不可能出现的
+## 如何得到生成矩阵G和校验矩阵H
+![](assets/Pasted%20image%2020230505173005.png)
+(7,4)码
+|            |     |     |     |     |     |     |     |     |
+| ---------- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 位置       | 1   | 2   | 3   | 4   | 5   | 6   | 7   |     |
+| 二进制码表 | 1   | 1   | 1   | 1   | 1   | 1   | 1   |     |
+|    G第一行        | 1   | 0   | 0   | 0   | 1   | 1   | 0   |     |
+|    表示的有效位位置        |   3  |   5  |   6  |  7   | 1    |  2   |   4  |     |
+12 4 位置是校验位
+3 5 6 7位置是有效位置
+1. 左边先写4*4的单位矩阵.
+2. 数据位3,与校验位1 2 有关. 数据位3的位置上是1,为了分别与1 2 凑成偶数个1,所以1 2 熵也写1,就变成了: 1000 110
+一共7个码字,4个有效位,3个校验位.
+生成矩阵 :
+
+
+
+## Hamming DIstance
+海明距离 : 在信息理论中，两个相等长度字符串之间的海明距离指的是对应位置上符号不同的数量。
+
+最小海明距离 : 一个码的最小海明距离是任意两个不同码字之间的最小海明距离
+
+侦测到e个错误: 最小汉明距离至少为e+1; 纠正e个错误,最小汉明距离至少为2e+1
+
+hamming code的最小海明距离一定是3,这是由于hamming code的特性决定的.所以汉明码的纠错能力就是1,不会再改变了.
+![](assets/Pasted%20image%2020230504210316.png)
+
+## Hamming Code
+H parity check code matrix 奇偶校验矩阵
+G Generator Matrix  生成矩阵
+syndrome 校验和
+检验单bit错误的步骤和例子
+![](assets/Pasted%20image%2020230505144836.png)
+
+![](assets/Pasted%20image%2020230505142522.png)
+
+纠正单bit错误的例子:
+![](assets/Pasted%20image%2020230505144514.png)
+$z = H \cdot r^T = H \cdot e^T_i$   
+
+# Low-density parity-check code，LDPC码）
+Low-density parity-check code，LDPC码） 是最接近香农极限的编码.
+
+模2计算就是异或:相同为0,想异为1
+
+
+# Lec4
+To generate a (7,4) cyclic code we need a generator polynomial of degree (n − k)=3, which has to divide $(x^7 + 1)$. Since, $x^7 + 1 = (x + 1)(x^3 + x^2 + 1)(x^3 + x + 1)$ we could choose either $(x^3 + x^2 + 1) or (x^3 + x + 1)$. We will use $g(x) = (x^3 + x^2 + 1)$ and multiply it by all P(x) polynomials of the form $P(x) = p_1x^3 + p_2x^2 + p_3x + p_4$ where the pis can be 0 or 1. This generates 16 code word polynomials from c(x) = P(x)g(x) and hence the complete set of code words.
+
+为了生成一个(7,4)循环码，我们需要一个生成多项式，其次数为(n-k)=3，该多项式必须能够整除$(x^7 + 1)$。因为$x^7 + 1 = (x + 1)(x^3 + x^2 + 1)(x^3 + x + 1)$，我们可以选择$(x^3 + x^2 + 1)或(x^3 + x + 1)$。我们将使用$g(x) = (x^3 + x^2 + 1)$，并将其与所有形式为$P(x) = p_1x^3 + p_2x^2 + p_3x + p_4$的P(x)多项式相乘，其中pis可以是0或1。这将通过c(x) = P(x)g(x)生成16个码字多项式，从而生成完整的码字集。
+
+这段话解释了如何生成一个(7,4)循环码。首先，我们需要找到一个生成多项式g(x)，它的次数是(n-k)。我们从$x^7 + 1$的因式中选择一个合适的生成多项式。接下来，将生成多项式与所有可能的P(x)多项式相乘，得到一组码字多项式c(x)。这样，我们就得到了一个(7,4)循环码的完整码字集。 
+
+## BCH
+For any m and t, there exists a BCH code with n = 2m − 1, (n − k) ≤ mt and dmin = 2t + 1.  
+
+For example, t=2, m=4 provides a (15,7) BCH code with a generator polynomial corresponding to 111010001. (15,7): 7 = 15-mt = 15-8 = 7
