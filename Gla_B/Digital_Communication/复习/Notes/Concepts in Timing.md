@@ -31,13 +31,15 @@ Costas环可以应用于多种数字调制方案，包括二进制相移键控�
 
 占用带宽（OBW）限制为5 MHz，且信道需要实现至少9 Mbit/s的通信数据比特率。
 ### 香农定理
+[香农定理](https://blog.csdn.net/shulianghan/article/details/108002782)
 $$
 C_{max} = Blog_2(1+\frac{S}{N})
 $$
 
 $\frac{S}{N}$ 表示的就是SNR,信噪比.不是简单的SIgnal 除以 Noise.
-$\frac{S}{N}$的单位为dB.    与简单的S除以N的换算关系为 $SNR = \frac{S}{N} = 10lg(\frac{P_S}{P_N})$,注意是以10为底
-
+$\frac{S}{N}$的单位为dB.    与简单的S除以N的换算关系为 $SNR = \frac{S}{N} = 10lg(\frac{P_S}{P_N}) [以功率]$,注意是以10为底
+用电压就是$SNR = \frac{S}{N} = 20lg(\frac{V_S}{V_N}) [以电压]$
+![](assets/Pasted%20image%2020230507121014.png)
 (a)
 使用香农-哈特利定理，这个通信信道中实现无误差传输所需的最小信噪比是多少？ 
 
