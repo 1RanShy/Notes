@@ -3,13 +3,13 @@
 OFDM是正交频分复用（Orthogonal Frequency Division Multiplexing)
 # 什么是OFDM 正交频分复用
 OFDM是一种基于频域的传输技术，通过将整个信号分成多个子信号，每个子信号具有相同的带宽，但在频域上是正交的（即没有互相干扰的频率）。这种技术使得OFDM信号具有很强的抗干扰能力，因为如果其中一个子信号受到干扰，其它子信号不会受到影响。
+
+OFDM is a frequency-domain based transmission technology that divides the entire signal into multiple sub-signals, each with the same bandwidth but orthogonal in the frequency domain (i.e. there is no frequency interference). This technology gives OFDM signals strong anti-interference ability, as if one sub-signal is interfered with, other sub-signals will not be affected.
 ![](assets/截图_20230325153428.png)
 ##  关键字解释
 正交 : 可区分的,两个频率正交就代表这两个频率我们是可以区分的.
 频分: 分频
-复用: 
-
-多个子载波进行<mark style="background: #FFB86CA6;">并行</mark>的传输
+复用: 多个子载波进行<mark style="background: #FFB86CA6;">并行</mark>的传输
 
 # 什么是DFT
 给定的表达式表示在时间间隔(0, NT)上的N个等间距采样x(kT)的离散傅里叶变换（DFT）。<mark style="background: #FFB8EBA6;">DFT是一种数学变换，它将时域中的离散序列转换为频域中的离散序列。换句话说，它用频率分量的形式表示信号。</mark>

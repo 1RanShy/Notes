@@ -1,11 +1,29 @@
+Orthogonal Frequency Division Multiplexing (OFDM
 频分复用（Frequency Division Multiplexing，FDM）是一种将多个信息信号同时传输到同一个信道的技术。在FDM中，不同的信息信号被调制到不同的载波频率上，然后这些载波信号通过同一个信道传输。接收端可以通过分离这些不同的载波信号并进行解调来还原出原始信息信号。FDM在广播电视、有线电视、卫星通信等领域得到了广泛应用，可以提高信道利用率，减少信道占用数量，实现信息的高效传输。
 
 ![](assets/Pasted%20image%2020230502152212.png)
+## 什么是OFDM
+OFDM是一种基于频域的传输技术，通过将整个信号分成多个子信号，每个子信号具有相同的带宽，但在频域上是正交的（即没有互相干扰的频率）。这种技术使得OFDM信号具有很强的抗干扰能力，因为如果其中一个子信号受到干扰，其它子信号不会受到影响。
 
+OFDM is a frequency-domain based transmission technology that divides the entire signal into multiple sub-signals, each with the same bandwidth but orthogonal in the frequency domain (i.e. there is no frequency interference). This technology gives OFDM signals strong anti-interference ability, as if one sub-signal is interfered with, other sub-signals will not be affected.
+![](assets/截图_20230325153428.png)
+
+正交 : 可区分的,两个频率正交就代表这两个频率我们是可以区分的.
+频分: 分频
+复用: 多个子载波进行<mark style="background: #FFB86CA6;">并行</mark>的传输
 
 # Tutorial
 ## 2021 Q4
 ![](assets/Pasted%20image%2020230507183719.png)
+(a)
+$$
+\begin{equation} \begin{aligned}
+C = Blog_2(1+\frac{S}{N})\\
+SNR = 8.45dB = 10lg{\frac{S}{N}} --> \frac{S}{N} = 7 \\
+C = 36Mbps (bit.per.second) . bit . rate
+\end{aligned} \end{equation}
+$$
+
 
 (f)
 
@@ -105,3 +123,11 @@ The achievable data rate for a practical OFDM system depends on several factors 
     
 
 For a typical practical OFDM system, the achievable data rate can be in the range of tens of Mbps to several hundred Mbps, depending on the specific application and system configuration.
+
+
+# 2020 Q5
+![](assets/截图_20230508104002.png)
+
+
+## 2019 Q6
+![](assets/Pasted%20image%2020230508112522.png)
