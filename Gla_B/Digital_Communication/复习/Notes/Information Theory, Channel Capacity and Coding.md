@@ -470,7 +470,8 @@ n 输出码字 k 输入的比特信息 m 表示寄存器个数 码率则为 R = 
 
 <font color="#ff0000">生成多项式的最高次幂是等于那个校验位的个数,也等于校验矩阵的行数</font>
 
-生成矩阵的行数是嗯~信息位的个数
+生成矩阵的行数是嗯~信息位的个数k 
+校验矩阵的行数
 
 From Hamming distance concept, a code with minimum distance 2t+1 can correct any t errors.  
 
