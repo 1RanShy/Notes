@@ -477,7 +477,7 @@ From Hamming distance concept, a code with minimum distance 2t+1 can correct any
 A linear block code that corrects all burst errors of length t or less must have at least 2t check symbols. 线性分组码:也就是说2t个校验位,能纠正t个错误. -> 我们学的都是线性分组码
 
 RS 码是线性分组循环码. QR(二维码就是应用了RS码)
-
+![](assets/Pasted%20image%2020230508164213.png)
 系统码就是指信息位和校验位（也就是[信道编码](https://so.csdn.net/so/search?q=%E4%BF%A1%E9%81%93%E7%BC%96%E7%A0%81&spm=1001.2101.3001.7020)产生的冗余位）分开而非系统码的信息位与校验位则相互交叉，如信息位为：（a0,a1,a2,a3）,编码产生的位数为（b1,b2）,则利用系统码可能生成为（a0,a1,a2,a3,b0,b1）;而利用非系统码则可能为（a0,b0,a1,a2,b1,a3）(当然还有其他可能)。
 例如汉明码就是 非系统码
 ## 如何得到生成多项式和校验矩阵

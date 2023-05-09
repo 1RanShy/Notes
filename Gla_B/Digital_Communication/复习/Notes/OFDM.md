@@ -33,7 +33,7 @@ Even if some subcarriers do not carry data, having a total number of subcarriers
 
 (g)
 对于基于双边带调制的数字通信系统的传输通道，其可用带宽为12 MHz。这个OFDM示例的子载波间距是多少？
-
+<font color="#ff0000">子载波间距是频率 suncarrier spacing</font>
 OFDM系统的子载波间距可以使用以下公式进行计算：
 
 子载波间距 = 可用带宽 / 子载波数
@@ -41,88 +41,40 @@ OFDM系统的子载波间距可以使用以下公式进行计算：
 在OFDM系统中，每个子载波的带宽为子载波间距的倒数，因此子载波间距越小，可以容纳的子载波数量越多，从而提高系统的数据传输率。
 
 根据上述公式，对于具有12 MHz可用带宽的OFDM系统，假设使用4096个子载波，则其子载波间距为：
-
+子载波间距是频率 suncarrier spacing
 子载波间距 = 12 MHz / 4096 = 2.93 kHz
 
 因此，这个OFDM示例的子载波间距为2.93 kHz。
 
 (h)
+In this example, the subcarrier spacing is 2.93 kHz.
 
-根据奈奎斯特采样定理，最小有效符号（时间）长度应为子载波间距的倒数的两倍。这是因为OFDM系统中的子载波之间存在相互干扰，因此需要使用周期性前缀（CP）来避免干扰。CP的长度通常设置为最小有效符号长度的一半。
+The relationship between the subcarrier spacing and the symbol duration is given by:
 
-因此，对于本例中的OFDM系统，最小有效符号长度为：
+Symbol duration = 1 / Subcarrier spacing
 
-最小有效符号长度 = 2 × 子载波间距的倒数 = 2 × (1 / 2.93 kHz) = 684.6 纳秒
+Symbol duration = 1 / 2.93 kHz = 341.85 ns
 
-因此，本例中OFDM系统的最小有效符号长度为684.6纳秒。
-
+Therefore, the minimum useful symbol length for this OFDM example is 341.85 nanoseconds.
+这里我们不考虑guard interval
 
 (i)
-在不考虑任何误码纠正或信道编码的情况下，OFDM系统的最大数据速率由其每个符号携带的比特数以及每秒钟发送的符号数量（也称为符号速率或每秒钟的符号数）决定。OFDM系统的每个符号可以传输多个比特，其数量由调制方案和调制阶数确定。
+在OFDM系统中，子载波间距是相邻子载波之间的频率差异，通常被选择为子载波之间正交，不相互干扰。OFDM子载波间距和OFDM系统的波特率有以下关系：
 
-在本例中，OFDM系统使用QPSK星座图，因此每个符号可以携带2个比特。OFDM系统的符号速率等于子载波数量，因为在每个OFDM符号中，每个子载波携带一个调制符号。在本例中，OFDM系统使用4096个子载波，因此其符号速率为4096。
+波特率 = 子载波间距 x 每个子载波携带的比特数
 
-因此，OFDM系统的最大数据速率可以使用以下公式计算：
+在这个公式中，每个子载波携带的比特数是由调制方案和星座映射方式决定的。例如，在QPSK星座映射下，每个子载波携带2比特的信息。因此，如果使用4096个子载波进行QPSK星座映射，每个OFDM符号携带的比特数为4096 x 2 = 8192比特。
 
-最大数据速率 = 每个符号携带的比特数 × 符号速率
+使用前面提到的子载波间距2.93 kHz和每个OFDM符号携带8192比特的信息，我们可以计算OFDM系统的波特率：
 
-在本例中，最大数据速率为：
+波特率 = 2.93 kHz x 8192 = 23.9798 Mbps
 
-最大数据速率 = 2 × 4096 = 8192 bps
-
-因此，OFDM系统在这个例子中的最大数据速率为8192比特每秒。
+因此，对于这个例子，使用4096个子载波和QPSK星座映射的OFDM系统的波特率为23.9798 Mbps
 (j)
-实际应用中，OFDM系统的最大数据速率可能会低于理论最大速率，因为存在一些实际因素会影响其性能。以下是一些可能导致OFDM系统数据速率降低的实际考虑因素：
+我们需要在符号间加入gurard interval来分割每个符号. gurard interval的时长一般为symbol时长的$\frac{1}{4}$ 
 
-1.  信道失真：在实际信道中，OFDM符号可能会受到多径效应和其他形式的失真影响，从而降低信号质量和符号解码的准确性。这可能会导致需要重传数据，从而降低数据速率。
-    
-2.  信道干扰：在同一频带上的其他无线电信号和电磁干扰可能会影响OFDM系统的性能，从而降低数据传输速率。
-    
-3.  带宽限制：在实际中，OFDM系统的实际带宽可能会受到限制，从而导致无法使用理论最大带宽，从而降低数据速率。
-    
-4.  调制方案和调制阶数： OFDM系统的数据速率也取决于所采用的调制方案和调制阶数。更高的调制阶数可以在单个符号中传输更多的比特，但也更容易受到信道失真和干扰的影响。
-    
-
-综上所述，OFDM系统在实际应用中的数据速率可能低于理论最大速率，这取决于信道条件、干扰、带宽限制和调制参数等多种实际因素。
-
-In practical applications, the maximum data rate of an OFDM system may be lower than the theoretical maximum rate, because there are several practical considerations that can affect its performance. Some of the practical considerations that may result in a reduced data rate for an OFDM system include:
-
-1.  Channel distortion: In real-world channels, OFDM symbols may be subject to multipath effects and other forms of distortion, which can degrade signal quality and reduce the accuracy of symbol decoding. This may result in the need to retransmit data, thereby reducing the data rate.
-    
-2.  Channel interference: Other radio signals and electromagnetic interference on the same frequency band can affect the performance of an OFDM system, leading to lower data transmission rates.
-    
-3.  Bandwidth limitations: In practice, the actual bandwidth of an OFDM system may be limited, which can prevent the use of the theoretical maximum bandwidth and thus reduce the data rate.
-    
-4.  Modulation scheme and order: The data rate of an OFDM system also depends on the modulation scheme and order used. Higher-order modulation can transmit more bits per symbol, but is also more susceptible to channel distortion and interference.
-    
-
-In summary, the data rate of an OFDM system in practical applications may be lower than the theoretical maximum rate, depending on various practical factors such as channel conditions, interference, bandwidth limitations, and modulation parameters.
 (k)
-OFDM系统的可达数据速率取决于多种因素，例如：
-
-1.  信道带宽：实际信道的带宽会影响OFDM系统的数据传输速率，通常会受到一定的限制。
-    
-2.  调制方式和阶数：OFDM系统的数据速率还取决于所采用的调制方式和阶数。高阶调制能够在每个符号中传输更多的比特，但也更容易受到信道干扰和失真的影响。
-    
-3.  编码方式：OFDM系统采用的编码方式会对数据传输速率产生影响，采用更加高效的编码方式可以提高数据传输速率。
-    
-4.  信道条件：信道干扰、多径效应和其他失真因素也会影响OFDM系统的数据传输速率。
-    
-
-对于一个典型的OFDM系统，实际可达到的数据速率通常会受到上述因素的影响。因此，实际数据速率可能低于理论最大速率。一般而言，OFDM系统的数据传输速率可以在几十Mbps到数百Mbps之间，这取决于具体应用场景和系统配置。
-
-The achievable data rate for a practical OFDM system depends on several factors such as:
-
-1.  Channel bandwidth: The actual bandwidth of the channel can affect the data transmission rate of the OFDM system, which is usually limited.
-    
-2.  Modulation scheme and order: The data rate of an OFDM system also depends on the modulation scheme and order used. Higher-order modulation can transmit more bits per symbol, but is also more susceptible to channel interference and distortion.
-    
-3.  Coding scheme: The coding scheme used by the OFDM system can also affect the data transmission rate. More efficient coding schemes can improve the data transmission rate.
-    
-4.  Channel conditions: Channel interference, multipath effects, and other forms of distortion can also affect the data transmission rate of the OFDM system.
-    
-
-For a typical practical OFDM system, the achievable data rate can be in the range of tens of Mbps to several hundred Mbps, depending on the specific application and system configuration.
+由于j问,所以这里的速率应该是原来的速率的$\frac{4}{5}$ 
 
 
 # 2020 Q5
@@ -131,3 +83,21 @@ For a typical practical OFDM system, the achievable data rate can be in the rang
 
 ## 2019 Q6
 ![](assets/Pasted%20image%2020230508112522.png)
+
+## 2022_Q5
+![](assets/Pasted%20image%2020230508163339.png)
+
+(f)
+$$
+\begin{equation} \begin{aligned}
+\frac{5M}{1024} = 4883HZ . subcarrierSpacing = baudRate\\
+\frac{9M}{4883*1024} = 2 \\
+所以是QPSK
+\end{aligned} \end{equation}
+$$
+
+
+
+# Conclusion
+滚降滤波器脉冲频谱图:
+函数图像必定经过($\frac{1}{2T},0.5$)
