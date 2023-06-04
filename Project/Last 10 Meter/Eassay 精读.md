@@ -89,3 +89,39 @@ ___
 
 2.2 Devices with Tactile Displays and Combined Audio and Tactile Feedback
 ___
+
+
+
+*3 Body worn device*
+___
+- 它使用腰带上的GPS和包括地磁和加速度传感器的方向传感器来检测用户的位置和方向[70]。
+
+- 使用了超声波和红外的设备
+- 使用了摄像头的设备
+
+
+一个完整的室内避障设备应该包含一以下两部分:
+1. 检测设备 : 检测室内的障碍物
+	- 红外
+	- 超声波
+	- 摄像头
+	- GPS
+	- 地磁感应 用来检测方向
+2. 反馈设备 : 反馈给盲人信息
+	- 触感
+	- 声音
+	- 电击
+	- 震动
+![](assets/Pasted%20image%2020230604160545.png)
+这样子可以明确指示方向
+
+
+- 电机的震动频率可以代表物体距离人体的距离
+- 背部和前部肩胛骨上的轻拍感觉分别用于表示开始行走/前进和停止行走/停止。
+
+虚拟方向是通过使用声音在两只耳朵之间的相位和振幅差异来获得的。在导航模式下，单声道音调引导用户绕过障碍物，方向指示行进方向，更高的频率表示较低的推荐行进速度。
+
+
+*4 Hand and Arm-Worn Systems*
+___
+The system is able to determine which sonar detected the echo first and, consequently, whether it is to the right or left of the user.
