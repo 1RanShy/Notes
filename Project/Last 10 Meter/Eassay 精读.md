@@ -125,3 +125,21 @@ ___
 *4 Hand and Arm-Worn Systems*
 ___
 The system is able to determine which sonar detected the echo first and, consequently, whether it is to the right or left of the user.
+
+
+
+*5  Foot-Worn Devices*
+___
+在鞋子中加入振动器
+
+![](assets/截图_20230608085402.png)
+
+
+
+*6. Responses to the Three Research Questions*
+___
+可穿戴性,即响应时间以及外观的要求
+
+
+6.3.1
+8 - 10 小时的续航时间是需要的,最少最少也需要2小时的通勤时间.
