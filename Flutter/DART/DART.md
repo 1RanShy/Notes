@@ -483,4 +483,33 @@ printf1(age2: 11);
 }
 ```
 
-# 16
+# 16 const 常亮构造函数
+
+#const #final
+___
+![](assets/Pasted%20image%2020230624193726.png)
+
+#常亮构造函数
+___
+![](assets/Pasted%20image%2020230624193741.png)
+
+`idetical(A,B)` 函数可以检测A B是不是占据了内存空间相同的位置[内存中只保留了一个对象]?
+
+```dart
+var o1 = const Object();
+var o2 = const Object();
+
+print(idectical(o1,o2));//true
+print(idectical(o1,o1));//true
+
+```
+
+![](assets/Pasted%20image%2020230624194153.png)
+
+1. 常量构造函数需以const关键字修饰
+2. const构造函数必须用于成员变量都是final的类
+
+![](assets/Pasted%20image%2020230624194156.png)
+
+1. 不带const调用构造函数
+2. 使用const调用构造函数
