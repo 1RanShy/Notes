@@ -221,3 +221,266 @@ void main(){
 
 ![](assets/截图_20230623145020.png)
 
+
+# 11 抽象类
+![](assets/Pasted%20image%2020230624160332.png)
+
+
+Datr中的多态：
+*允许将子类类型的指针赋值给父类类型的指针，同一个函数调用会有不同的执行效果*
+
+子类的实例赋值给父类的引用。
+
+多态就是父类定义一个方法不去实现，让继承他的子类去实现，每个子类有不同的表现。
+
+```dart
+abstract class Animal()
+{
+	void eat();
+
+	//这个就是公用的方法,可以被子类继承后直接调用的
+	void printf(){
+		print("I am an animal"); 
+	}
+}
+
+
+
+Dog extends Animal()
+{
+	@override
+	void eat(){
+		print("Dog");
+	}
+	
+	void run(){
+		print("run");
+	}
+}
+
+Dog extends Animal()
+{
+	@override
+	void eat(){
+		print("Cat");
+	}
+
+	void run(){
+		print("run");
+	}
+}
+
+Animal d = new Dog();
+
+d.eat();
+
+Animal c = new Cat();
+c.run(); //这个就会报错
+```
+#抽象类与接口的区别
+___
+抽象类中尚且还有公用的方法,例如上文中的`printf`.
+一旦没有公用的方法,抽象类只是用来做一个子类继承时,必须重写的函数的标准,那么就可以把这个抽象类声明为接口.
+
+Java
+1. 单继承
+2. 但是可以实现多个接口
+
+Dart
+1. 多继承 with实现 成为Mixin方法
+2. 可实现多个接口 [用 implement 继承class. 没有interface这个关键字,接口接直接用abstract定义]
+
+C++
+1. 可实现多继承
+2. 没有接口(implements)这一个概念,但是带有纯虚函数的类可以当做接口使用
+
+# 12
+![](assets/Pasted%20image%2020230624171733.png)
+
+主要是第二点,作为mixins的类不能有构造函数
+```dart
+class A{
+	print("A");
+}
+
+class B{
+	print("B");
+}
+
+Class C with A,B{
+
+}
+//A B 作为Minins 类是不允许有构造函数的
+
+```
+
+# 13 泛型类 泛型方法
+
+#泛型方法
+___
+```dart
+//不指定类型放弃了类型检查,我们想实现的是传入什么,返回什么数据类型
+
+//这样写 泛型方法
+
+T getData<T>(T value){
+	return value;
+
+}
+
+void main(){
+
+	//print(getData(21)); //这个就没指定类型,就不会有类型检查
+	getData<String>("你好");
+}
+
+
+```
+#泛型类
+___
+```dart
+class MyList<T>{
+	List list = <T>[]; //泛型 受到一会儿<String>这个的指定的类型限制
+	void add(T value){
+		this.list.add(value);
+	}
+
+	List getList(){
+		return list;
+	}
+}
+
+void main(){
+	MyList l1 = new MyList();//这个就可以添加任意的数据
+	MyList l2 = new MyList<String>();//这个就只能添加String类型的数据
+
+}
+```
+
+
+# 14 如何引入库
+
+![](assets/Pasted%20image%2020230624182343.png)
+
+#await_async
+___
+![](assets/Pasted%20image%2020230624182401.png)
+- async和await就是为了让线程执行时,不等待需要大量时间执行的函数,而是在执行这个函数的同时,也执行下面的函数.
+
+![asyns_Await](assets/Pasted%20image%2020230624183827.png)
+
+
+# 15
+#late 关键字
+___
+![](assets/Pasted%20image%2020230624190500.png)
+
+- late允许之后给这个变量赋初值
+```dart
+
+//没有late
+//这时就会出错,因为没有构造函数来给age幅值,age也没有初值.
+class Person{
+	int age;
+
+	void showAge(){
+		print("${age}");
+	}
+
+}
+
+//这几种写法都对
+//1.
+class Person{
+	late int age;
+
+	void showAge(){
+		print("${age}");
+	}
+
+}
+
+//2.
+class Person{
+	int age = 0;
+
+	void showAge(){
+		print("${age}");
+	}
+
+}
+
+//3
+class Person{
+	int age;
+
+	Person(this.age);
+
+	void showAge(){
+		print("${age}");
+	}
+
+}
+
+//4 和3一样只是写法不同
+class Person{
+	int age;
+
+	Person(int age){
+		this.age = age;
+	}
+
+	void showAge(){
+		print("${age}");
+	}
+
+}
+
+```
+
+#required 关键字
+___
+```dart
+// 命名参数
+String printUserInfo1(String username, {int age = 10, String sex = "男"}){
+
+}
+
+String printUserInfo2(String username, {required int age = 10, required String sex = "男"})
+
+/*
+函数1可以只传递username,因为age sex都有默认的值
+函数2必须要传递三个参数,因为required 即使age与sex 有默认值也需要传递参数
+
+*/
+```
+
+```dart
+printf1({int age = 10, int age2 = 20}) {
+
+print("${age}" + "${age2}");
+
+}
+
+  
+
+printf2({required int age = 10, required int age2 = 20}) {
+
+print("${age}" + "${age2}");
+
+}
+
+  
+
+void main() {
+
+printf1(age: 22, age2: 11);
+
+  
+
+printf1(age2: 11);
+
+}
+```
+
+# 16
