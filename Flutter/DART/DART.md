@@ -1,5 +1,6 @@
 [03 Dart的数据类型详解 int double String bool List Maps-2021更新\_哔哩哔哩\_bilibili](https://www.bilibili.com/video/BV1S4411E7LY?p=3&spm_id_from=pageDriver&vd_source=2f6e531d9d833ca7fdcd8c5bb99bd1bb)
 [Dart中类的默认构造函数和命名构造函数](https://www.itying.com/dart/dart25.html)
+
 [List 数组的常用方法](https://blog.csdn.net/qq_42351033/article/details/107924344)
 
 # 01
@@ -483,7 +484,7 @@ printf1(age2: 11);
 }
 ```
 
-# 16 const 常亮构造函数
+# 16 const 常量构造函数
 
 #const #final
 ___
@@ -507,8 +508,13 @@ print(idectical(o1,o1));//true
 ![](assets/Pasted%20image%2020230624194153.png)
 
 1. 常量构造函数需以const关键字修饰
-2. const构造函数必须用于成员变量都是final的类
-
+2. const构造函数必须用于成员ji变量都是final的类
+3. 如果常量构造函数构造的东西是一样的[常量构造函数的形式参数全部一样,那么无论你用常量构造函数构造多少个变量这些变量都共享同一内存.]
+```dart
+String B = const A(1,2,3);
+String C = const A(1,2,3);
+//那么B和C共享统一内存. 这样写const函数的好处就是,可以节约内存空间.你再来一万个类似BC的变量都是只占一个内存空间.
+```
 ![](assets/Pasted%20image%2020230624194156.png)
 
 1. 不带const调用构造函数
