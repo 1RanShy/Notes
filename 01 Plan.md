@@ -3,6 +3,27 @@ ___
 - [ ] flutter的google map导航
 - [ ] 嵌入式的传感器算法
 
+- [ ] 按照他说的重新改写一下 risk assessment
+
+
+Risk Assement
+___
+Hi
+
+Thanks.  I thought I had commented already.  I agree it is important to assess the risks of the device.  The mitigation measures need to be things you can do in device design to reduce the risks.  It is not necessarily feasible for the user to have a backup device, though I would some blind people use other devices togehter with a long cane.  Who is going to do the inspection and maintenance?  
+
+In terms of battery, having a backup could be useful, but adds weight and the user would need to insert it.  The device needs a low batter indicator with accessible output.  It should also be designed to reduce power and maximise battery life.
+
+This risk assessment is aimed at the risks of doing the project, so you will need to produce a version about these risks.
+
+Regards
+
+Marion
+___
+
+
+
+
 生活
 ___
 - [ ] 拿显示器
