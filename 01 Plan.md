@@ -1,75 +1,98 @@
-学习
+25号把所有东西弄好
+
+timer 初始画没开
+|     |            |
+| --- | ---------- |
+| 1.  | 报告要求   |
+| 2.  | Poster要求 |
+| 3.  | 找房子     | 
+- [ ] Spareroom找房子
+- [ ] Risk Assessment 怎么办
+	- [ ] 问问他们提交了吗?
+
+2023年7月22日
+____
+到26号5天都搞这个
+- [x] 手机进水
+- [ ] 串口无法使用,重新解决一下
+- [ ] ESP8266串口的使用
+- [ ] 手机和手杖蓝牙通讯
+---
+
+Beacon
 ___
-- [ ] Flutter的google map导航,跳转到第三方.
-	- [ ] 两小时
-- [ ] 嵌入式的传感器算法
-	- [ ] 这个简单可以先不做
-	- [ ] 只是简单地移植到ESP8266上就可以了
-- [ ] 查一下信标
-	- [ ] 能不能一直发送信息
-- [ ] 重写一下risk assessment然后发给教授
-
-- [ ] 按照他说的重新改写一下 risk assessment
+实在不行就随便写写算了
 
 
-Risk Assement
+拐杖
 ___
-Hi
+1. 报警 
+	1. 小于50 拐杖振动, 手机上也振动 1s发一次 一次振动 0.5s
+	2. 语音按钮 设定报警的范围
+2. 语音按钮得到距离
 
-Thanks.  I thought I had commented already.  I agree it is important to assess the risks of the device.  The mitigation measures need to be things you can do in device design to reduce the risks.  It is not necessarily feasible for the user to have a backup device, though I would some blind people use other devices togehter with a long cane.  Who is going to do the inspection and maintenance?  
+直接写语音按钮操作所有的
 
-In terms of battery, having a backup could be useful, but adds weight and the user would need to insert it.  The device needs a low batter indicator with accessible output.  It should also be designed to reduce power and maximise battery life.
-
-This risk assessment is aimed at the risks of doing the project, so you will need to produce a version about these risks.
-
-Regards
-
-Marion
+App要求
 ___
+1. [ ] 每个界面要有明确的功能与责任
+2. [ ] 每个界面的按键要尽可能少
+3. [ ] 每个界面一定要在最底下留下大片的空白区域
+4. [ ] 每个界面一进来要有 语音介绍这一页的功能!\
+5. [ ] 改一下电话号码的语音 77-123411这样的电话
 
 
-
-
-生活
 ___
-- [x] 拿显示器
-- [ ] 拿转换插头
+Risk Assessment:
 
-| 代码 | 事件                                 |
-| ---- | ------------------------------------ |
-|      | 看一下蓝牙,开始写手机APP             |
-|      | 开始协调所有的传感器代码             |
-|      | 机器人是怎么利用这些传感器的相关代码 |
-|      | Flutter 导航界面以及相关ＡＰＩ的调用 | 
+Hi Professor:
 
+Hello Professor, here is my revised risk assessment. I have made the changes according to your suggestions, and I have **bolded** the sections that I modified. Thank you very much for your assistance!
 
-| 状态 | 项目                                          | 事件 |
-| ---- | --------------------------------------------- | ---- |
-|      | 看一下论文写作课程                            |      |
-|      | 所有的购买流程最好在这周末之前就完成.         |      |
-|      | 看一下学校是否回复我租房子的消息 学号是否正确 |      |
+I sent you a copy last Wednesday. Just to make sure you didn't miss it, I feel it's necessary to send it to you again.
+
+Best Regards
+Shuai Ran
 
 
+rssiRight
+rssiRaw
+rssiDifference
 
 
-# 生活
+rssiRaw = rssiRight
 
 
-# Project
-- [ ] 找一下传感器 (B站/Github/知乎)
-- [ ] 找一下国内外有没有相关的项目,也可以找找开发的灵感.
+80 - rssiRight
+越大说明离哪边越近
 
 
+___
+功能简介:
+___
+1. 语言控制所有
 
-- [ ] 7月之前看好Flutter
-	- 一天2.5小时差不多 / 一天 8 集差不多
-	- 能看完基础的,也能看完Flutter的扩展
-	- 
-- [ ] 7月初开始写单片机程序
-- [ ] 7月中旬开始写手机端应用
+障碍物现在多远
+
+设置报警距离
+
+timer 初始画没开
+
+2023年7月24日
+___
+桌面的 Android Stuio才是改好的
+1. [x] timer 初始画没开 在initstate中打开,不然的话没法自动刷新.
+2. [x] 加一个 不安全振动
+3. [x] 打开谷歌地图也加上 语言
+4. [x] 调整一下界面的布局
+5. [ ] 测试一下能否找到入口
+
+口令 : 
+set  设置距离报警
+far  询问多远
 
 
+![](assets/截图_20230724095548.png)
+![](assets/截图_20230724095946.png)
 
-#每周开会老师会说什么
-1. 问你这周做了什么
-2. 下周准备做什么
+
