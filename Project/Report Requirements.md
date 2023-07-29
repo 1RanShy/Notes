@@ -66,5 +66,69 @@ An electronic version of the report must be submitted as a PDF document on the M
 
 ___
 
+# 开头几页需要注意的事情
+
+Mechanical aspects The length of the body of the report will be specified in the instructions for the project (for MSc project about 40-50 pages, approximately 10,000 to 15,000 words). 
+
+Extra material may be provided in appendices but this material should be for reference only: you cannot assume that the reader will study it. 
+
+In other words, do not put vital points in an appendix. You will probably think that the report is too short but this is deliberate. 
+
+Most reports are submitted to busy managers, who do not have time to read lengthy documents. It is important to learn how to pick out the vital points and write a concise report with maximum impact. 
+
+Reports should be word-processed and submitted electronically. 
+
+<font color="#f79646">Use A4 pages and a clear typeface such as 12-point Times, single line spacing, number the pages and leave margins of at least 25 mm all round. </font>
+
+<font color="#ff0000">Follow this layout (this document breaks some of the rules to keep it compact). </font>
+
+<span style="background:#b1ffff">• The front cover should show the title of the project with your name(s) and matriculation number(s) and the name of your supervisor(s). </span>
+<span style="background:#b1ffff">• Put the abstract on the next page. It should be about 100–250 words and gives a brief summary of the report including the background and aims of the project, the principal results and conclusions. </span>
+<span style="background:#b1ffff">• The next page should show the table of contents. </span>
+<span style="background:#b1ffff">• The body of the report should be divided into numbered sections, each starting on a new page. Figures (diagrams, plots or photographs) and tables need captions and should be numbered.</span>
 
 
+# Abstarct
+本旨主要研究开发盲人最后十米的导航, --- 取得了什么成果?
+
+1. 研究了Beacon
+2. 研究了超声波测距
+3. 研究了Beacon
+
+
+# List of Objective
+
+
+# Nomenclature（术语、命名法）
+BLE
+RSSI
+
+# Table Of Contents
+
+
+# Discussion 
+
+信标的分析
+1. 每个信标即使在同一点测量到的信号值也有可能不同.
+2. 每个信标在10m的最远距离和0m的最近距离得到的信标值.
+
+最好是自己再重新弄一个app能够显示信标的RSSI. 按一下显示一下.
+
+测距仪器的分析
+1. 距离测距分析20  40 60 100 , 仪器数据 实物数据对比. 与实际的距离进行误差分析.
+
+
+
+
+# 页数分析
+
+一共需要40-60页
+附录不包含在页数之中.
+但是没有严格的页数与字数限制.
+
+| 内容              | 页数 | 总页数 |
+| ----------------- | ---- | ------ |
+| Front Cover       | 1    | 1      |
+| Abstract          | 1    | 2      |
+| Nomenclature      | 1    | 3      |
+| Table Of Contents | 2    | 5      | 
