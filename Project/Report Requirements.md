@@ -1,24 +1,24 @@
 
-
-|     | 时间       | 项目 |
-| --- | ---------- | ---- |
-| 1   | 29         |      |
-| 2   | 30         |      |
-| 3   | 31         |      |
-| 4   | 01         |      |
-| 5   | 02         |      |
-| 6   | 03         |      |
-| 7   | 04         |      |
-| 8   | 05         |      |
-| 9   | 06         |      |
-| 10  | 07         |      |
-| 11  | 08         |      |
-| 12  | 09         |      |
-| 13  | 10         |      |
-| 14  | 11         |      |
-| 15  | 12         |      |
-| 16  | 13         |      |
-| 17  | 14   12:00 |      |
+# 时间安排
+|     | 时间       | 项目                         |
+| --- | ---------- | ---------------------------- |
+| 1   | 29         |                              |
+| 2   | 30         |                              |
+| 3   | 31         |                              |
+| 4   | 01         |                              |
+| 5   | 02         | 可穿戴设备理论               |
+| 6   | 03         | 可穿戴设备理论 移动应用理论  |
+| 7   | 04         | 移动应用理论 可穿戴设备结果  |
+| 8   | 05         | 移动应用结果    不够再凑字数 | 
+| 9   | 06         | Conclusion   找文献 翻译    --- |
+| 10  | 07         | Conclusion   找文献 翻译  ---   |
+| 11  | 08         | 绘图 检查语法错误       ---     |
+| 12  | 09         |                              |
+| 13  | 10         |                              |
+| 14  | 11         |                              |
+| 15  | 12         |                              |
+| 16  | 13         |                              |
+| 17  | 14   12:00 |                              |
 
 
 ![](assets/截图_20230728164255.png)
@@ -132,6 +132,10 @@ Reports should be word-processed and submitted electronically.
 # Nomenclature（术语、命名法）
 BLE
 RSSI
+TXD
+RXD
+VCC
+GND
 
 # Table Of Contents
 
@@ -265,19 +269,21 @@ Text and conclusions show good insight into the technical results of the project
 正文和结论很好地洞察了项目的技术成果,以及它们与更广泛的工程和社会背景的关系。
 
 
-# 邮件 
-
-eng-teachingoffice@glasgow.ac.uk
-[Poster](assets/2633609R_Poster.pdf)
-
-Hi :
-
-This is my poster. 
-Thanks!
-
-Good Regards
-RanShuai
-
 
 # 谁来评分
 ![](assets/f32d4d6563507caf4ae4bf63e1c1abe.png)
+
+
+# 网址&datasheet
+
+[HC06](https://components101.com/wireless/hc-06-bluetooth-module-pinout-datasheet)
+
+
+# 指导
+![](assets/截图_20230802184954.png)
+
+
+每一部分都按照这个方法来来写
+
+
+# 找文献
