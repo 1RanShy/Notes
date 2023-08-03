@@ -136,6 +136,7 @@ TXD
 RXD
 VCC
 GND
+HZ
 
 # Table Of Contents
 
@@ -278,8 +279,8 @@ Text and conclusions show good insight into the technical results of the project
 
 [HC06](https://components101.com/wireless/hc-06-bluetooth-module-pinout-datasheet)
 
-
-# 指导
+[GP2Y0A02YK0F](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://docs.rs-online.com/268d/0900766b81364822.pdf)
+# 按照这样凑字数
 ![](assets/截图_20230802184954.png)
 
 
