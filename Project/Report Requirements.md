@@ -1,25 +1,31 @@
 
 # 时间安排
-|     | 时间       | 项目                         |
-| --- | ---------- | ---------------------------- |
-| 1   | 29         |                              |
-| 2   | 30         |                              |
-| 3   | 31         |                              |
-| 4   | 01         |                              |
-| 5   | 02         | 可穿戴设备理论               |
-| 6   | 03         | 可穿戴设备理论 移动应用理论  |
-| 7   | 04         | 移动应用理论 可穿戴设备结果  |
-| 8   | 05         | 移动应用结果    不够再凑字数 | 
-| 9   | 06         | Conclusion   找文献 翻译    --- |
-| 10  | 07         | Conclusion   找文献 翻译  ---   |
-| 11  | 08         | 绘图 检查语法错误       ---     |
-| 12  | 09         |                              |
-| 13  | 10         |                              |
-| 14  | 11         |                              |
-| 15  | 12         |                              |
-| 16  | 13         |                              |
-| 17  | 14   12:00 |                              |
+|     | 时间       | 项目                                   |
+| --- | ---------- | -------------------------------------- |
+| 1   | 29         |                                        |
+| 2   | 30         |                                        |
+| 3   | 31         |                                        |
+| 4   | 01         |                                        |
+| 5   | 02         | 可穿戴设备理论                         |
+| 6   | 03         | 可穿戴设备理论 移动应用理论            |
+| 7   | 04         |                                        |
+| 8   | 05         | 可穿戴设备结果 移动应用结果 conclusion |
+| 9   | 06         | 翻译 找文献 语法            |
+| 10  | 07         | 翻译 找文献 凑字数     语法   电路图   |
+| 11  | 08         | 重新再看一遍                           | 
+| 12  | 09         |                                        |
+| 13  | 10         |                                        |
+| 14  | 11         |                                        |
+| 15  | 12         |                                        |
+| 16  | 13         |                                        |
+| 17  | 14   12:00 |                                        |
 
+可穿戴设备结果
+1. [ ] 先给出整体的电路图
+2. [ ] 测距
+3. [ ] 蓝牙接收发送
+
+移动应用结果
 
 ![](assets/截图_20230728164255.png)
 
@@ -280,6 +286,8 @@ Text and conclusions show good insight into the technical results of the project
 [HC06](https://components101.com/wireless/hc-06-bluetooth-module-pinout-datasheet)
 
 [GP2Y0A02YK0F](chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://docs.rs-online.com/268d/0900766b81364822.pdf)
+
+[Nokia C21 - Full phone specifications](https://www.gsmarena.com/nokia_c21-11380.php)
 # 按照这样凑字数
 ![](assets/截图_20230802184954.png)
 
@@ -288,3 +296,13 @@ Text and conclusions show good insight into the technical results of the project
 
 
 # 找文献
+
+
+# 没有写进去的
+- [ ] 三点定位算法
+
+# 画图
+我现在一共有三种选择
+1. 使用PCB软件画图
+2. 使用哪个什么Firting画图软件
+3. 使用Draw.io画图
