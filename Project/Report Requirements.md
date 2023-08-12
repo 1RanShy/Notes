@@ -143,6 +143,7 @@ RXD
 VCC
 GND
 HZ
+元素 elements 指移动应用中的文本框 按钮 等
 
 # Table Of Contents
 
@@ -191,6 +192,13 @@ To address this problem this work describes….
 
 
 ![](assets/截图_20230731220828.png)
+
+
+# Conslusion
+
+
+# Future Consideration
+- [ ] 在界面上加上使用教程
 
 
 # 页数分析
@@ -306,3 +314,8 @@ Text and conclusions show good insight into the technical results of the project
 1. 使用PCB软件画图
 2. 使用哪个什么Firting画图软件
 3. 使用Draw.io画图
+
+# 格式要求
+![](assets/9ebfc5cde15e30ece0d6b76110aba5a.png)
+
+
